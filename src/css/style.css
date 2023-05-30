@@ -1,0 +1,9 @@
+* {
+    font-family: sans-serif;
+}
+
+html, body {
+    background: rgb(241, 236, 236);
+    margin: 0;
+    padding: 0;
+}
