@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import "./css/style.css";
 import Page404 from "./pages/Page404";
 import Nabory from "./pages/nabor/Nabory";
+import Changelogs from "./pages/Changelogs";
 
 function App() {
  
@@ -15,7 +16,8 @@ function App() {
     <BrowserRouter>
       <Routes>
       <Route path="/" element={ <Home/>} />
-      <Route path="/nabor/" element={ <Nabory helper={true} builder={true} />} />
+      <Route path="/nabor/" element={ <Nabory helper={false} builder={false} />} />
+      <Route path="/changelog/" element={<Changelogs />} />
       <Route path="*" element={ <Page404/>} />
       </Routes>
     </BrowserRouter>

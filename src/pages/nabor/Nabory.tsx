@@ -4,7 +4,7 @@ function Nabory(props: { helper: boolean, builder: boolean}) {
         if(props.helper) {
             return <li>V momentální chvíli probýhá helper nábor: <a href="/nabor/helper">Zde</a></li>
         } else {
-            return <span>V momentální chvíli neprobýhá helper nábor</span>
+            return <li>V momentální chvíli neprobýhá helper nábor</li>
         }
     }
 
@@ -12,18 +12,22 @@ function Nabory(props: { helper: boolean, builder: boolean}) {
         if(props.builder) {
             return <li>V momentální chvíli probýhá builder nábor: <a href="/nabor/builder">Zde</a></li>
         } else {
-            return <span>V momentální chvíli neprobýhá builder nábor</span>
+            return <li>V momentální chvíli neprobýhá builder nábor</li>
         }
     }
 
 
     return (
         <>
-        <div className="helper">
+        <div className="helper" style={{
+            padding: "1em"
+        }}>
             <h3>Helper</h3>
             { isHelper() }
         </div>
-        <div className="builder">
+        <div className="builder" style={{
+            padding: "1em"
+        }}>
             <h3>Builder</h3>
             { isBuilder() }
         </div>
