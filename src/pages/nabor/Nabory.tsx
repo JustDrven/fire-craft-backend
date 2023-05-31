@@ -18,20 +18,24 @@ function Nabory(props: { helper: boolean, builder: boolean}) {
 
 
     return (
-        <>
-        <div className="helper" style={{
-            padding: "1em"
-        }}>
-            <h3>Helper</h3>
-            { isHelper() }
+        <div className="nabor" style={{ display: "flex", 
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+            flexDirection: "row" }}>
+            <div className="helper" style={{
+                padding: "1em"
+            }}>
+                <h3>Helper</h3>
+                { isHelper() }
+            </div>
+            <div className="builder" style={{
+                padding: "1em"
+            }}>
+                <h3>Builder</h3>
+                { isBuilder() }
+            </div>
         </div>
-        <div className="builder" style={{
-            padding: "1em"
-        }}>
-            <h3>Builder</h3>
-            { isBuilder() }
-        </div>
-        </>
     )
 }
 

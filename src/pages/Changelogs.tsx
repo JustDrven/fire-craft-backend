@@ -18,7 +18,7 @@ function Changelogs() {
                         }
                         auther="JustDrven" />
 
-                       <Log title={"Website source"} category={"Dev log"} desc={
+                       <Log title={"Optimalizace"} category={"Dev log"} desc={
                         "Rádi vám oznamujeme, že webová stránka je nové optimalizovaná, pokud se najde nějaká chyba byli bychom rádí kdyby jste chybu nahlásili."
                         }
                         auther="JustDrven" />

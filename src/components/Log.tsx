@@ -14,7 +14,14 @@ function Log(props: {title: string, category: string, desc: string, auther: stri
                 <br />
                 <br />
                 <span>Děkuji za přečtení <br />
-                S pozdravem {props.auther}</span>
+                S pozdravem {props.auther}</span> <img src={`https://minotar.net/avatar/${props.auther}`} alt="JustDrven" style={
+                    {
+                        position: "relative",
+                        left: "0.4em",
+                        top: "0.5em",
+                        maxWidth: "1.5em"
+                    }
+                } />
             </div>
         </div>
     
