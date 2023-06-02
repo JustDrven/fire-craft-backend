@@ -16,11 +16,11 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={ <Home />} />
-      <Route path="/nabor/" element={ <Nabory helper={true} builder={false} />} />
-      <Route path="/nabor/helper" element={ <Helper />} />
-      <Route path="/changelog/" element={<Changelogs />} />
-      <Route path="*" element={ <Page404 />} />
+        <Route path="/" element={ <Home />} />
+        <Route path="/nabor/" element={ <Nabory helper={true} builder={false} />} />
+        <Route path="/nabor/helper" element={ <Helper />} />
+        <Route path="/changelog/" element={<Changelogs />} />
+        <Route path="*" element={ <Page404 />} />
       </Routes>
     </BrowserRouter>
 

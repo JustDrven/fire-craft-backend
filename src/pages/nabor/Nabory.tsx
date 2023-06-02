@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 function Nabory(props: { helper: boolean, builder: boolean}) {
 
     function isHelper() {
@@ -18,6 +20,10 @@ function Nabory(props: { helper: boolean, builder: boolean}) {
 
 
     return (
+        <>
+        <Head>
+            <title>Fire-Craft.eu | Nábory</title>
+        </Head>
         <div className="nabor" style={{ display: "flex", 
             justifyContent: "center",
             alignItems: "center",
@@ -36,6 +42,7 @@ function Nabory(props: { helper: boolean, builder: boolean}) {
                 { isBuilder() }
             </div>
         </div>
+        </>
     )
 }
 
