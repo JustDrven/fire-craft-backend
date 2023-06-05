@@ -7,6 +7,8 @@ import Page404 from "./pages/Page404";
 import Nabory from "./pages/nabor/Nabory";
 import Changelogs from "./pages/Changelogs";
 import Helper from "./pages/nabor/Helper";
+import Servers from "./pages/public/Servers";
+import ServerList from "./pages/public/ServerList";
 
 function App() {
  
@@ -21,6 +23,8 @@ function App() {
         <Route path="/nabor/helper" element={ <Helper />} />
         <Route path="/changelog/" element={<Changelogs />} />
         <Route path="*" element={ <Page404 />} />
+        <Route path="/public/api/servers/id/:serverID" element={ <Servers /> } />
+        <Route path="/public/api/servers/" element={ <ServerList /> } />
       </Routes>
     </BrowserRouter>
 

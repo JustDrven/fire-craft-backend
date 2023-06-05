@@ -1,4 +1,7 @@
+import data from "../json/logs";
+
 function Log(props: {title: string, category: string, desc: string, auther: string}) {
+
     return (
         <div className="log">
             <div className="title" style={{
